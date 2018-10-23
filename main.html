@@ -52,8 +52,9 @@
 				      <td>1</td>
 				      <td>5</td>
 				      <td  class="tpic">
-				      	<img src="img/cao zuo jiao hu tu biao.png"/>
-				      	<img src="img/cao zuo tu biao.png"/>
+				      	
+				      	<img src="img/cao zuo tu biao.png" />
+				      	<!--<img src="img/cao zuo jiao hu tu biao.png" style="display: none;"/>-->
 				      </td>
 				    </tr>
 				  </tbody>
@@ -92,8 +93,9 @@
 				      <td>1</td>
 				      <td>20</td>
 				      <td  class="tpic">
-				      	<img src="img/cao zuo jiao hu tu biao.png"/>
-				      	<img src="img/cao zuo tu biao.png"/>
+				      
+				      	<img src="img/cao zuo tu biao.png" />
+				      	<!--<img src="img/cao zuo jiao hu tu biao.png"style="display: none;"/>-->
 				      </td>
 				    </tr>
 				  </tbody>
@@ -132,8 +134,9 @@
 				      <td>1</td>
 				      <td>20</td>
 				      <td  class="tpic">
-				      	<img src="img/cao zuo jiao hu tu biao.png"/>
-				      	<img src="img/cao zuo tu biao.png"/>
+				      	
+				      	<img src="img/cao zuo tu biao.png" />
+				      	<!--<img src="img/cao zuo jiao hu tu biao.png"style="display: none;"/>-->
 				      </td>
 				    </tr>
 				  </tbody>
@@ -157,6 +160,19 @@
 			  ,layedit = layui.layedit
 			  ,laydate = layui.laydate;
 			})
+		</script>
+		<script type="text/javascript">
+			var oimg=document.getElementsByTagName("img");
+			console.log(oimg)
+			for(var i=1;i<oimg.length;i++){
+				oimg[i].onmouseover=function(){
+				this.src="img/cao zuo jiao hu tu biao.png";
+				}
+				oimg[i].onmouseout=function(){
+				this.src="img/cao zuo tu biao.png";
+				}
+			}
+				
 		</script>
 	</body>
 </html>

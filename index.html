@@ -62,7 +62,7 @@
 		<script src="js/less.min.js">
 			
 		</script>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			var obox=document.getElementById("main");
 			var ojiemian=document.getElementById("jiemian");
 			obox.style.height=document.documentElement.clientHeight+"px";
@@ -70,13 +70,14 @@
 			ojiemian.style.height=document.documentElement.clientHeight+"px";
 			ojiemian.style.width=document.documentElement.clientWidth+"px";
 			
-		</script>
+		</script>-->
 		<script>
-			layui.use(['form', 'layedit', 'laydate','layer','element'], function(){
+			layui.use(['form', 'layedit', 'laydate','layer','element','jquery'], function(){
 			
 			  var form = layui.form
 			  ,elment=layui.element
 			  ,layer = layui.layer
+			  ,$=layui.jquery
 			  ,layedit = layui.layedit
 			  ,laydate = layui.laydate;
 			  
