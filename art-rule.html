@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/aritic.css"/>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+
+	</head>
+	<body class="layui-layout-body art">
+		<!--文章 积分规则-->
+		<div class="layui-layout layui-layout-admin Smain-top">
+			<span>积分说明</span>	
+			<img src="img/xiao jian tou.png"/>			
+		</div>
+		<!--发布-->
+		<div class="Srea">
+			<span>发布</span>	
+			<p>积分规则：</p>
+			<p>删除发布成功的文章，应<a style="color: red;">扣除</a>相应的分数</p>
+		</div>
+		<!--收藏-->
+		<div class="collect">
+			<span>收藏</span>	
+			<p>积分规则：</p>
+			<p>1、自己收藏自己发布的文章,只算主动收藏积分</p>			
+			<p>2、取消收藏后,应<a style="color: red;">扣除</a>相应分值</p>
+			<p>(包括主动收藏积分和被收藏积分)</p>
+		</div>	
+		<!--分享-->
+		<div class="share">
+			<span>分享</span>	
+			<p>积分规则：</p>
+			<p>1、自己分享自己发布的文章,只算主动分享积分</p>			
+			<p>2、文章被连续分享多次.其被分享积分均<a style="color: red;">增加</a>在原创作者上(<a style="color: red;">例:乙分享甲原创的文章M,丙又继续分享乙分享的M,此时产生</a></p>
+			<p><a style="color: red;">的被分享积分增加到甲上</a>)</p>
+			<p>3、删除分享后的文章,应<a>扣除</a>相应的分值</p>
+			<p>(包括主动分享积分和被分享积分)</p>	
+		</div>	
+		<!--评论-->
+		<div class="comment">
+			<span>评论</span>	
+			<p>积分规则：</p>
+			<p>1、自己评论自己发布的文章,只算主动评论积分</p>			
+			<p>2、对于评论的评论,其被评论积分均<a style="color: red;">增加</a>在该文章的原创作者上(<a style="color: red;">例:甲原创甲原创的文章M,乙评论为A,丙评论为A为B,则此时产生的</a></p>
+			<p><a style="color: red;">被评论积分增加到甲上</a>)</p>
+			<p>3、删除评论后,应<a>扣除</a>相应的分值</p>
+			<p>(包括主动评论积分和被评论积分)</p>			
+		</div>	
+		<!--点赞-->
+		<div class="coll">
+			<span>点赞</span>	
+			<p>积分规则：</p>
+			<p>1、自己点赞自己发布的文章,只算主动点赞积分</p>			
+			<p>2、取消点赞后,应<a style="color: red;">扣除</a>相应分值</p>
+			<p>(包括主动点赞积分和被点赞积分)</p>		
+		</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script>
+			layui.use(['element','form'],function(){
+			  var element = layui.element;
+			});	
+		</script>
+		<script src="layui/layui.js"></script>
+	</body>
+</html>
