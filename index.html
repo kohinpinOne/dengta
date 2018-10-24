@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯塔</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="less/index.css">
+    <link rel="stylesheet" href="less/iconfont.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">灯塔</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left nav_box">
+
+            <li class="layui-nav-item color_nav"><a>主页管理</a></li>
+
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item user-mes message"><a href="javascript:;">消息<span class="layui-badge-dot"></span></a></li>
+            <li class="layui-nav-item user-mes">
+                <a href="javascript:;">
+                    <img src="img/tou%20xiang.png" class="layui-nav-img">
+                    <i id="userName"></i>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a >基本资料</a></dd>
+                    <dd><a id="quit">退出登录</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+
+    <div class="layui-side ">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-this back">
+                    <a class="" href="javascript:;"><i class="iconfont icon-qunzu"></i>主页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><i class="iconfont icon-wenzhang"></i>文章</a>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:;"><i
+                        class="iconfont icon-quanzi2-copy-copy-copy-copy"></i>圈子</a></li>
+                <li class="layui-nav-item"><a href="javascript:;"><i class="iconfont icon-qita"></i>基础功能</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 20px;">
+
+            <div class="page one act">
+                <div class="cont_head">
+                    <span>欢迎您：</span>
+                    <span>当前状态：在线</span>
+                    <span>等级：13</span>
+                </div>
+                <div class="cont_ziliao">
+                    <span class="title">个人资料</span>
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="250">
+                            <col>
+                            <col width="250">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td>登陆</td>
+                            <td id="countTime">自2018年至今-------</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td class="now_addr"> </td>
+                            <td rowspan="2"><i class="iconfont icon-xiugai can_do"></i></td>
+                        </tr>
+                        <tr>
+                            <td>等级</td>
+                            <td class="score"> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cont_ziliao">
+                    <span class="title">最近动态</span>
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="250">
+                            <col width="250">
+                            <col width="250">
+                            <col width="250">
+                            <col width="250">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>积分周期</td>
+                            <td>周期内积分次数上限（次）</td>
+                            <td>积分分值（分）</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>主动分享文章</td>
+                            <td>每天</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td rowspan="2"><i class="iconfont icon-xiugai"></i></td>
+                        </tr>
+                        <tr>
+                            <td>被动分享文章</td>
+                            <td>每天</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="page two ">
+                <div class="cont_head">
+                    <span>操作说明</span>
+                    <span class="alldone">完成</span>
+                </div>
+                <div class="page_two_cont flex">
+                    <div class="flex">
+                        <p class="now_addred">
+                        </p>
+                        <button class="layui-btn btn_can_do">修改</button>
+                    </div>
+                    <span></span>
+                    <div class="flex">
+                        <p class="scored"> </p>
+                        <button class="layui-btn chScore">修改</button>
+                    </div>
+                </div>
+                <div class="hint">
+                    <p>温馨提示：</p>
+                    <p>您每天只能对<span>同一对象</span>修改<span>一次!</span></p>
+                </div>
+
+            </div>
+
+            <div class="page thr ">
+                <div class="cont_head">
+                    <span>使用当前位置</span>
+                </div>
+                <div class="addr">
+                    <input type="text" id="picker" placeholder="省市">
+                    <span class="done">完成</span>
+                </div>
+            </div>
+            <div class="page fou ">
+                <div class="cont_head">
+                    <span >系统消息</span>
+                </div>
+                <div class="new_box">
+
+                </div>
+
+                    <div class="setOver flex">
+                        <section >
+                            <p id="reader">尊敬的xxx</p>
+                            <p id="mess">一位xxxxxxxxxxxxxxxxx</p>
+                            <p id="sendtime">2018.10.1</p>
+                            <button class="layui-btn del">删除</button>
+                            <button class="layui-btn sure">确定</button>
+                        </section>
+                    </div>
+
+            </div>
+
+            <div class="page art five"></div>
+            <div class="page art six"></div>
+            <div class="page circ sev"></div>
+            <div class="page circ eig"></div>
+            <div class="page base nin"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="layui/layui.js"></script>
+<script src="js/picker.js"></script>
+<script src="js/city.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>
+
+
+
+
+
+

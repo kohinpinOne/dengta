@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#main {
+  overflow: hidden;
+}
+#main #jiemian {
+  height: 720px;
+  background: url(../img/login.png);
+  background-size: 100% 100%;
+}
+#main .act {
+  display: block!important;
+}
+#main .layui-form {
+  display: none;
+  padding: 50px;
+  background: #e5e5e5;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main .layui-form p {
+  display: inline-block;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 2px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+#main .layui-form .layui-form-item .layui-form-label {
+  width: 80px;
+  text-align: left;
+  font-weight: 600;
+}
+#main .layui-form .layui-form-item .layui-input {
+  width: 200px;
+  height: 20px;
+  margin: 10px 0;
+}
+#main .layui-form .btn {
+  padding-right: 125px;
+  text-align: right;
+}
+#main .layui-form .btn .layui-btn-xs {
+  width: 75px;
+}
+/*# sourceMappingURL=login.css.map */

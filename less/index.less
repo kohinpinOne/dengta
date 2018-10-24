@@ -1,0 +1,225 @@
+.layui-layout-body {
+  background-color: #cccccc;
+  .layui-header {
+    background-color: white !important;
+
+    .layui-logo {
+      color: #000;
+      font: 26px/60px '';
+    }
+    .layui-nav-item {
+      margin-right: 20px;
+      cursor: pointer;
+      a {
+        color: #000;
+      }
+    }
+    .color_nav {
+      background-color: #5c9d99;
+      a {
+        color: white;
+      }
+
+    }
+    .user-mes{
+     a{
+       color: #000!important;
+       &:hover{
+         color: #000!important;
+       }
+     }
+
+    }
+  }
+  .layui-side-scroll {
+    padding: 10px 0;
+    height: 300px;
+    margin-top: 20px;
+    background-color: white;
+    .layui-nav {
+      background-color: white;
+      .layui-this{
+        a{
+          color: white;
+        }
+      }
+      a {
+        margin: 20px 0;
+        font-size:16px ;
+        color: #000;
+        i{
+          font-size: 16px;
+        }
+      }
+
+      & > li {
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+  .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #5c9d99;
+  }
+  .layui-nav .layui-nav-item a:hover, .layui-nav .layui-this a {
+    color: white;
+  }
+  .new_add a:hover{
+    background-color: #5c9d99;
+  }
+  .layui-body {
+    z-index: 1 !important;
+    .cont_head {
+      background-color: white;
+      padding: 20px;
+      span {
+        margin-right: 20px;
+      }
+      .alldone{
+        float: right;
+        color: #5c9d99;
+        font: 500 20px '';
+        cursor: pointer;
+      }
+
+    }
+    .cont_ziliao {
+      padding: 20px;
+      background-color: white;
+      margin-top: 20px;
+      & > table {
+        text-align: center;
+      }
+      .title {
+        font: 400 30px '';
+      }
+      .can_do {
+        color: #5c9d99;
+        cursor: pointer;
+      }
+    }
+    .act {
+      display: block !important;
+    }
+    .page {
+      display: none;
+    }
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .page_two_cont {
+      padding: 50px 20px 20px;
+      background-color: white;
+      margin-top: 20px;
+      flex-direction: column;
+      & > div {
+        width: 100%;
+        justify-content: space-between;
+      }
+      span {
+        margin: 20px 0;
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+    .hint {
+      background-color: white;
+      margin-top: 20px;
+      padding: 50px 20px;
+      p {
+        margin-bottom: 30px;
+        span {
+          color: red;
+        }
+        &:nth-of-type(2) {
+          padding-left: 30px;
+        }
+      }
+    }
+    .thr {
+      .cont_head {
+        font: 400 18px '';
+        color: #5c9d99;
+      }
+      .addr {
+        background-color: white;
+        padding: 30px 20px;
+        margin-top: 20px;
+        span {
+          float: right;
+          cursor: pointer;
+          color: #5c9d99;
+          font: 500 18px '';
+        }
+      }
+    }
+    .fou {
+      .detil {
+        margin-top: 20px;
+        background-color: white;
+        padding: 20px;
+        i {
+          color: #5c9d99;
+          cursor: pointer;
+          float: right;
+        }
+      }
+
+      .setOver {
+        opacity: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: 0.5s;
+        width: 55%;
+        margin: auto;
+        height: 65%;
+        background-color: rgba(0, 0, 0, 0.3);
+        section {
+          width: 55%;
+          height: 55%;
+          background-color: white;
+          padding: 50px;
+          p {
+            &:nth-of-type(1) {
+              margin: 20px;
+            }
+            &:nth-of-type(2) {
+              padding-left:50px ;
+              margin: 50px 0;
+            }
+            &:nth-of-type(3) {
+
+            text-align: right;
+            }
+          }
+          button{
+            float: right;
+            margin-top:50px ;
+            &:nth-of-type(2){
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .icon-xiugai {
+    font-size: 20px;
+  }
+}
+
+#picker {
+  border: none;
+}
+.picker .picker-panel{
+  left: 220px;
+  width: 84% !important;
+}
+
+

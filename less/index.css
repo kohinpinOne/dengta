@@ -1,0 +1,204 @@
+.layui-layout-body {
+  background-color: #cccccc;
+}
+.layui-layout-body .layui-header {
+  background-color: white !important;
+}
+.layui-layout-body .layui-header .layui-logo {
+  color: #000;
+  font: 26px/60px '';
+}
+.layui-layout-body .layui-header .layui-nav-item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.layui-layout-body .layui-header .layui-nav-item a {
+  color: #000;
+}
+.layui-layout-body .layui-header .color_nav {
+  background-color: #5c9d99;
+}
+.layui-layout-body .layui-header .color_nav a {
+  color: white;
+}
+.layui-layout-body .layui-header .user-mes a {
+  color: #000 !important;
+}
+.layui-layout-body .layui-header .user-mes a:hover {
+  color: #000 !important;
+}
+.layui-layout-body .layui-side-scroll {
+  padding: 10px 0;
+  height: 300px;
+  margin-top: 20px;
+  background-color: white;
+}
+.layui-layout-body .layui-side-scroll .layui-nav {
+  background-color: white;
+}
+.layui-layout-body .layui-side-scroll .layui-nav .layui-this a {
+  color: white;
+}
+.layui-layout-body .layui-side-scroll .layui-nav a {
+  margin: 20px 0;
+  font-size: 16px ;
+  color: #000;
+}
+.layui-layout-body .layui-side-scroll .layui-nav a i {
+  font-size: 16px;
+}
+.layui-layout-body .layui-side-scroll .layui-nav > li i {
+  margin-right: 10px;
+}
+.layui-layout-body .layui-nav-tree .layui-nav-item a:hover {
+  background-color: #5c9d99;
+}
+.layui-layout-body .layui-nav .layui-nav-item a:hover,
+.layui-layout-body .layui-nav .layui-this a {
+  color: white;
+}
+.layui-layout-body .new_add a:hover {
+  background-color: #5c9d99;
+}
+.layui-layout-body .layui-body {
+  z-index: 1 !important;
+}
+.layui-layout-body .layui-body .cont_head {
+  background-color: white;
+  padding: 20px;
+}
+.layui-layout-body .layui-body .cont_head span {
+  margin-right: 20px;
+}
+.layui-layout-body .layui-body .cont_head .alldone {
+  float: right;
+  color: #5c9d99;
+  font: 500 20px '';
+  cursor: pointer;
+}
+.layui-layout-body .layui-body .cont_ziliao {
+  padding: 20px;
+  background-color: white;
+  margin-top: 20px;
+}
+.layui-layout-body .layui-body .cont_ziliao > table {
+  text-align: center;
+}
+.layui-layout-body .layui-body .cont_ziliao .title {
+  font: 400 30px '';
+}
+.layui-layout-body .layui-body .cont_ziliao .can_do {
+  color: #5c9d99;
+  cursor: pointer;
+}
+.layui-layout-body .layui-body .act {
+  display: block !important;
+}
+.layui-layout-body .layui-body .page {
+  display: none;
+}
+.layui-layout-body .layui-body .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layui-layout-body .layui-body .page_two_cont {
+  padding: 50px 20px 20px;
+  background-color: white;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.layui-layout-body .layui-body .page_two_cont > div {
+  width: 100%;
+  justify-content: space-between;
+}
+.layui-layout-body .layui-body .page_two_cont span {
+  margin: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+.layui-layout-body .layui-body .hint {
+  background-color: white;
+  margin-top: 20px;
+  padding: 50px 20px;
+}
+.layui-layout-body .layui-body .hint p {
+  margin-bottom: 30px;
+}
+.layui-layout-body .layui-body .hint p span {
+  color: red;
+}
+.layui-layout-body .layui-body .hint p:nth-of-type(2) {
+  padding-left: 30px;
+}
+.layui-layout-body .layui-body .thr .cont_head {
+  font: 400 18px '';
+  color: #5c9d99;
+}
+.layui-layout-body .layui-body .thr .addr {
+  background-color: white;
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+.layui-layout-body .layui-body .thr .addr span {
+  float: right;
+  cursor: pointer;
+  color: #5c9d99;
+  font: 500 18px '';
+}
+.layui-layout-body .layui-body .fou .detil {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.layui-layout-body .layui-body .fou .detil i {
+  color: #5c9d99;
+  cursor: pointer;
+  float: right;
+}
+.layui-layout-body .layui-body .fou .setOver {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  width: 55%;
+  margin: auto;
+  height: 65%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.layui-layout-body .layui-body .fou .setOver section {
+  width: 55%;
+  height: 55%;
+  background-color: white;
+  padding: 50px;
+}
+.layui-layout-body .layui-body .fou .setOver section p:nth-of-type(1) {
+  margin: 20px;
+}
+.layui-layout-body .layui-body .fou .setOver section p:nth-of-type(2) {
+  padding-left: 50px ;
+  margin: 50px 0;
+}
+.layui-layout-body .layui-body .fou .setOver section p:nth-of-type(3) {
+  text-align: right;
+}
+.layui-layout-body .layui-body .fou .setOver section button {
+  float: right;
+  margin-top: 50px ;
+}
+.layui-layout-body .layui-body .fou .setOver section button:nth-of-type(2) {
+  margin-right: 30px;
+}
+.layui-layout-body .icon-xiugai {
+  font-size: 20px;
+}
+#picker {
+  border: none;
+}
+.picker .picker-panel {
+  left: 220px;
+  width: 84% !important;
+}
+/*# sourceMappingURL=index.css.map */
