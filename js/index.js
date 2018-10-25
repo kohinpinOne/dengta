@@ -125,8 +125,16 @@ layui.use(['element', 'layer'], function () {
     //修改完成
     $('.alldone').click(function () {
 
+        if($('.chScore').html()==='完成'){
+            flag = true;
+            $('.chScore').html('修改');
+            let text = $('.chScore').siblings('input').val();
+            $('.chScore').siblings('input').replaceWith($(`<p class="scored">${text}</p>`));
+        }
+
         let sco = $('.scored').html();
         let addr = $('.now_addred').html();
+
         console.log(sco, addr);
         if (addr != oldAdr || sco != oldSco) {
             if (addr != '' || sco != '') {
