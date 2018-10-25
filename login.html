@@ -15,7 +15,7 @@
                 <div class="layui-col-xs12 layui-col-md6 layui-col-md-offset4">
 
                     <!--form-->
-                    <form class="layui-form act" action="">
+                    <form class="layui-form one_form act" action="">
                         <div class="layui-form-item">
                             <p>灯塔APP后台管理系统</p>
                         </div>
@@ -52,7 +52,7 @@
                         </div>
                     </form>
 
-                    <form class="layui-form " action="">
+                    <form class="layui-form two_form " action="">
                         <div class="layui-form-item">
                             <p>新用户注册</p>
                         </div>
@@ -159,7 +159,9 @@
         });
 
         //监听提交
-        form.on('submit(demo1)', function (data) {
+        form.on('submit(demo1)', login);
+
+        function login() {
             let Name = $('.layui-input').eq(0).val();
             let Passwd = $('.layui-input').eq(2).val();
 
@@ -167,16 +169,30 @@
                 username: Name,
                 password: Passwd
             }, function (data) {
-                let encode = window.btoa(`username=${data.username}&password=${data.password}`)
-                location.href = `index.html?${encode}`
+                if (data.error) {
+                    layer.msg('对不起，请您先注册该用户！')
+                } else {
+                    let encode = window.btoa(`username=${data.username}&password=${data.password}`)
+                    location.href = `index.html?${encode}`
+                }
             }, "json")
+        }
 
-        });
+        $('.one_form').on('keydown', function (e) {
+            e = e || window.event;
+            console.log(1);
+            if (e.keyCode === 13) {
+                console.log(1,'ok');
+                login();
+            }
+        })
 
         $('.regis').click(function () {
             $('.layui-form').removeClass('act')
                 .eq(1).addClass('act')
         })
+
+
     });
 
 </script>
@@ -273,9 +289,9 @@
     }
 
     //注册
-    layui.use(['element','layer'], function () {
+    layui.use(['element', 'layer'], function () {
         let $ = layui.jquery,
-            layer=layui.layer;
+            layer = layui.layer;
 
         function getTrue(id) {
             if (id.html() == '正确！') {
@@ -285,8 +301,18 @@
             }
         }
 
-        $('.sub').click(function () {
+        $('.sub').click(regist)
+        $('.two_form').on('keydown',function (e) {
+            e=e||window.event;
+            console.log(2);
+            if(e.keyCode===13){
+                console.log(2, 'ok');
+                $('#moble').blur();
+                regist();
+            }
+        })
 
+        function regist () {
             if (getTrue($('#usr_prompt')) && getTrue($('#pwd_prompt')) && getTrue($('#repwd_prompt')) && getTrue($('#identity_prompt')) && getTrue($('#moble_prompt'))) {
 
                 let usr = $('#identity').val(),
@@ -304,15 +330,14 @@
                     console.log(data);
                     if (data.logID === 0) {
                         layer.msg('该用户名已经注册过了！')
-                    }else {
+                    } else {
                         layer.msg('恭喜你，注册成功！')
                         $('.layui-form').removeClass('act').eq(0).addClass('act')
                     }
                 }, "json")
 
             }
-        })
-
+        }
     })
 
 </script>
